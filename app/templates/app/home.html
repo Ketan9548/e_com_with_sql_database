@@ -1,0 +1,122 @@
+{% extends 'app/base.html' %} {% load static %} {% block title %} Home 
+{% endblock title %} 
+
+{% block banner-slider %}
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'App/images/banner/imge1.jpg' %}" class="d-block w-100" alt="banner_imge" height="430">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'App/images/banner/imge2.jpg' %}" class="d-block w-100" alt="banner_imge" height="430">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'App/images/banner/imge3.jpg' %}" class="d-block w-100" alt="banner_imge" height="430">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'App/images/banner/imge4.jpg' %}" class="d-block w-100" alt="banner_imge" height="430">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock banner-slider %} 
+
+{% block information %}
+<div class="container">
+  <div class="row bg-warning text-center p-5 text-white border-bottom shadow">
+    <h1>Products</h1>
+    <small class="fs-5">
+      this is oout new product for selling and in this product we have to
+      provide the diffrent diffrent information about the style and so many this
+      please visit out shopping side and explore loart of thing
+    </small>
+  </div>
+</div>
+{% endblock information %} 
+
+{% block main-content %}
+<div class="container">
+  <h1 class="fs-1 bg-info text-center">AMERICAN EAGLE</h1>
+  <h2 class="fs-1 text-center">Welcom to You fashion</h2>
+  <h2 class="fs-3 text-center">Clothes for your best moments</h2>
+  <br><br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+    <div class="goodnessec buttermilk smbg">
+      <a href="{% url 'category' 'SW' %}">
+        <div class="goodnesseccont text-center Sweateredit">
+          <img src="{% static 'App/images/product/image1.jpg' %}" class="img-responsive rounded-4" alt="not found" height="280px" width="340px">
+          <p class="text-danger mlkpro">Sweater</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+    <div class="goodnessec buttermilk smbg">
+      <a href="{% url 'category' 'S' %}">
+        <div class="goodnesseccont text-center Shirtedit ">
+          <img src="{% static 'App/images/product/image2.jpg' %}" class="img-responsive rounded-4" alt="not found" height="280px" width="340px">
+          <p class="text-danger mlkpro">Shirt</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+    <div class="goodnessec buttermilk smbg">
+      <a href="{% url 'category' 'L_U_S' %}">
+        <div class="goodnesseccont text-center Ladiesedit">
+          <img src="{% static 'App/images/product/image3.jpg' %}" class="img-responsive  rounded-4" alt="not found" height="280px" width="340px">
+          <p class="text-danger mlkpro">Ladies Uni Sweater</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+    <div class="goodnessec buttermilk smbg">
+      <a href="{% url 'category' 'T_S' %}">
+        <div class="goodnesseccont text-center Sweateredit">
+          <img src="{% static 'App/images/product/image4.jpg' %}" class="img-responsive  rounded-4" alt="not found" height="280px" width="350px">
+          <p class="text-danger mlkpro">T-Shirt</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+    <div class="goodnessec buttermilk smbg">
+      <a href="{% url 'category' 'J' %}">
+        <div class="goodnesseccont text-center Shirtedit">
+          <img src="{% static 'App/images/product/image5.jpg' %}" class="img-responsive  rounded-4" alt="not found" height="280px" width="350px">
+          <p class="text-danger mlkpro">Jeans</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+    <div class="goodnessec buttermilk smbg">
+      <a href="{% url 'category' 'Hi_W_SW' %}">
+        <div class="goodnesseccont text-center Ladiesedit">
+          <img src="{% static 'App/images/product/image6.jpg' %}" class="img-responsive  rounded-4" alt="not found" height="280px" width="380px">
+          <p class="text-danger mlkpro">Hi-Winter Sweater</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<br><br>
+{% endblock main-content %}

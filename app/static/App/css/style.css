@@ -1,0 +1,23 @@
+.goodnesseccont img {
+    width: 100%;
+}
+
+.Sweateredit img{
+    border: 2px solid black;
+}
+.Ladiesedit img{
+    border: 2px solid black;
+}
+.Shirtedit img{
+    border: 2px solid black;
+}
+
+.mlkpro {
+    text-decoration: none;
+    /* color: rgb(255, 162, 0); */
+    font-size: 22px;
+    margin-bottom: 14px;
+    width: 43%;
+    margin: 0 auto;
+    text-align: center;
+} 

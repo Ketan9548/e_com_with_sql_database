@@ -1,0 +1,60 @@
+{% extends 'app/base.html' %} 
+{% load static %} 
+{% block title %}Category{% endblock title %} 
+{% block banner-slider %}
+<div
+  id="carouselExampleSlidesOnly"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="{% static 'App/images/banner/imge1.jpg' %}"
+        class="d-block w-100"
+        alt="banner_imge"
+        height="430"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'App/images/banner/imge2.jpg' %}"
+        class="d-block w-100"
+        alt="banner_imge"
+        height="430"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'App/images/banner/imge3.jpg' %}"
+        class="d-block w-100"
+        alt="banner_imge"
+        height="430"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'App/images/banner/imge4.jpg' %}"
+        class="d-block w-100"
+        alt="banner_imge"
+        height="430"
+      />
+    </div>
+  </div>
+</div>
+{% endblock banner-slider %} 
+<br><br>
+{% block main-content %}
+<div>
+    <br>
+    <h2 class="text-center">Contact Us</h2>
+    <br>
+    <div>
+        <p class="fs-4 text-center">Address: </p>
+        <p class="fs-4 text-center">Contact: </p>
+        <p class="fs-4 text-center">Email: </p>
+        <p class="fs-4 text-center">linkdin: </p>
+    </div>
+</div>
+<br><br>
+{% endblock main-content %}
